@@ -1,0 +1,804 @@
+/* ------------- OVERALL ASPECT ------------- */
+
+* {
+    text-decoration: none;
+	padding: 0;
+	margin: 0;
+    
+}
+body {
+	position: relative;
+  	background-color: #f5f5f5;
+  	color: #333;
+	font-size: 16px;
+	font-family: "OpenSansRegular";
+}
+.white-bg {
+	background-color: #fff;
+}
+button, input, textarea, a {
+	outline: none;
+}
+
+a:focus {
+	outline: none;
+}
+.clearfix {
+	clear: both;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
+}
+
+/* ------------- GLOBA: LABEL ------------- */
+
+.label-online {
+	display: inline-block;
+	padding: 5px;
+	background-color: #5cb85c;
+	color: #fff;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+	text-align: center;
+}
+.label-offline {
+	display: inline-block;
+	padding: 5px;
+	background-color: #eee;
+	color: #333;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+	text-align: center;
+}
+
+/* ------------- GLOBA: INNER-HEADER ------------- */
+
+.inner-header {
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.page-title  {
+	padding-top: 50px;
+	padding-bottom: 80px;
+}
+.page-title h1 {
+	display: block;
+	color: #fff;
+	font-size: 25px;
+	font-family: "OpenSansSemibold";
+}
+.page-title p {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+	margin-top: 10px;
+}
+.page-title a {
+	margin-top: 30px;
+}
+
+/* ------------- GLOBAL: FOOTER -------------  */
+
+.footer {
+	height: 150px;
+	background-image: url('../img/main-bg.jpg');
+	background-position: 90% 90%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.copy {
+	padding-top: 50px;
+}
+.copy p {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 20px;
+}
+.copy p a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* ------------- GLOBA: INNER-SECTION ------------- */
+
+.inner-section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.inner-container {
+	background-color: #fff;
+	border-radius: 2px;
+	border: 1px solid #eee;
+	/*box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);*/
+}
+.inner-title {
+	padding: 30px;
+	border-bottom: 1px solid #eee;
+}
+.inner-title h2 {
+	display: block;
+	font-size: 18px;
+	font-family: "OpenSansSemibold";
+}
+.inner-body {
+	padding: 30px;
+}
+.inner-border {
+	border-bottom: 1px solid #eee;
+}
+.inner-margin {
+	margin-top: 30px;
+}
+.np {
+	padding: 0;
+}
+
+/* ------------- GLOBAL: BUTTONS -------------  */
+
+.button {
+	display: block;
+	height: 60px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-family: "OpenSansSemibold";
+	padding-top: 18px;
+	border: none;
+	border-radius: 60px;
+	transition: 0.5s;
+}
+.button:hover,
+.button:focus {
+	color: #fff;
+	text-decoration: none;
+}
+.button-light {
+	background-color: #f1bd13;
+}
+.button-light:hover {
+	background-color: #ffc813;
+	box-shadow: 0 0 60px rgba(241, 189, 19, 0.7);
+}
+.btn-send {
+	padding: 0;
+	width: 200px;
+	margin: 0 auto;
+}
+.btn-shadow {
+	box-shadow: 0 0 30px rgba(241, 189, 19, 0.5);
+}
+
+/* ------------- GLOBAL: INPUTS ------------- */
+
+.main-input {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #dbdbdb;
+	border-radius: 40px;
+	padding: 30px 10px 30px 100px;
+	color: #666;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+}
+.main-input-2 {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #dbdbdb;
+	border-radius: 40px;
+	padding: 30px;
+	color: #666;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+}
+.main-input-3 {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	padding: 20px;
+	color: #666;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+}
+
+.inner-textarea {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+	padding: 20px;
+	color: #666;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+	resize: none;
+	margin-top: 20px;
+}
+/* ------------- GLOBAL: MODAL WINDOWS ------------- */
+
+.modal-content {
+	border-radius: 0;
+}
+.modal-header {
+	padding: 30px;
+	border-bottom: 1px solid #eee;
+}
+.modal-header h2 {
+	font-size: 18px;
+	font-family: "OpenSansSemibold";
+}
+.modal-cnt {
+	padding: 30px;
+}
+
+/* ----------  INDEX PAGE STYLE ------------- */
+
+.header {
+	position: relative;
+	height: 1000px;
+	background-image: url('../img/header.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.navbar {
+	margin-bottom: 0;
+	background-color: transparent;
+	border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+}
+.navbar-nav li a {
+	color: #fff;
+	font-size: 14px;
+	font-family: "OpenSansRegular";
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+	color: #fffc00;
+	background: none;
+}
+.navbar-right a {
+	text-decoration: none;
+}
+.navbar-right a:hover {
+	text-decoration: none;
+}
+.navbar-right a:before {
+	position: absolute;
+	font-family: FontAwesome;
+	font-size: 16px;
+	content: '\f007';
+	left: -10px;
+}
+.navbar-toggle {
+	color: #fff;
+	font-size: 14px;
+	font-family: "OpenSansRegular";
+}
+.project-info {
+	padding-top: 250px;
+}
+.project-info h1 {
+	display: block;
+	color: #fff;
+	font-size: 40px;
+	font-family: "OpenSansSemibold";
+}
+.project-info p {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	font-family: "OpenSansRegular";
+	line-height: 25px;
+	margin-top: 30px;
+}
+.header-btn a {
+	margin-top: 50px;
+}
+.right-person {
+	position: absolute;
+	width: 713px;
+	height: 960px;
+	background-image: url('../img/right-person.png');
+	bottom: 0;
+	right: 15%;
+}
+
+/* ------------- INDEX: SECTION TITLE -------------  */
+
+.section-title h2 {
+	display: block;
+	color: #282941;
+	font-size: 25px;
+	font-family: "OpenSansSemibold";
+}
+.title-line {
+	height: 2px;
+	margin-top: 13px;
+	background-color: #f0f0f2;
+}
+
+/* ------------- INDEX: START -------------  */
+
+.start {
+	position: relative;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+.start-items-wrap {
+	position: relative;
+	padding-top: 100px;
+}
+.start-items-wrap .item-1 {
+	height: 440px;
+	background-image: url('../img/start/start-img-1.png');
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 120px;
+}
+.start-items-wrap .item-2 {
+	height: 440px;
+	background-image: url('../img/start/start-img-2.png');
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 120px;
+}
+.start-items-wrap .item-3 {
+	height: 440px;
+	background-image: url('../img/start/start-img-3.png');
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding-top: 120px;
+}
+.item-zoom {
+	transition: 0.5s;
+}
+.item-zoom:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.step-num {
+	color: #282941;
+	font-size: 25px;
+	font-family: "OpenSansBold";
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin: 0 auto;
+	padding-top: 7px;
+}
+.step-text p {
+	display: block;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+	margin-top: 50px;
+}
+.start-buttons {
+	margin-top: 80px;
+}
+.responsive-start {
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px; 		
+}
+
+/* ------------- INDEX: ADVANTAGES -------------  */
+
+.advantages {
+	position: relative;
+	padding-bottom: 90px;
+}
+.advantages-items-wrap {
+	margin-top: 100px;
+}
+.advantages-items-wrap .item {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.advantages-items-wrap .item .item-icon {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border: 2px solid #9696a9;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.i1:before {
+	position: absolute;
+	font-family: FontAwesome;
+	font-size: 45px;
+	content: '\f233';
+	color: #323259;
+	top: 28px;
+	left: 35px;
+}
+.i2:before {
+	position: absolute;
+	font-family: FontAwesome;
+	font-size: 45px;
+	content: '\f085';
+	color: #323259;
+	top: 28px;
+	left: 35px;
+}
+.i3:before {
+	position: absolute;
+	font-family: FontAwesome;
+	font-size: 45px;
+	content: '\f135';
+	color: #323259;
+	top: 28px;
+	left: 35px;
+}
+.advantages-items-wrap .item p {
+	display: block;
+	color: #323259;
+	font-size: 14px;
+	line-height: 25px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* ------------- INDEX: MONITORING -------------  */
+
+.monitoring {
+	position: relative;
+	padding-top: 90px;
+	padding-bottom: 150px;
+}
+.server-list {
+	margin-top: 60px;
+}
+.server-wrap {
+	margin-top: 40px;
+}
+.server-num {
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #323259;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 50%;
+	padding-top: 8px;
+}
+.server-name h2 {
+	display: block;
+	float: left;
+	color: #323259;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.server-players span {
+	display: block;
+	float: right;
+	color: #323259;
+	font-size: 20px;
+	font-family: "OpenSansSemibold";
+}
+
+/* ---------- LOGIN PAGE STYLE ------------- */
+
+.login-form {
+	padding: 40px;
+}
+.login-form:nth-child(1):before {
+	position: absolute;
+	content: '\f007';
+	color: #e7537a;
+	font-size: 30px;
+	font-family: "FontAwesome";
+	border-right: 1px solid #dbdbdb;
+	padding-right: 25px;
+	left: 115px;
+	top: 159px;
+	z-index: 1;
+}
+.login-form:nth-child(1):after {
+	position: absolute;
+	content: '\f023';
+	color: #e7537a;
+	font-size: 30px;
+	font-family: "FontAwesome";
+	border-right: 1px solid #dbdbdb;
+	padding-right: 25px;
+	left: 119px;
+	top: 243px;
+	z-index: 1;
+}
+.login-form input:nth-child(2) {
+	margin-top: 20px;
+}
+.login-option {
+	color: #666;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.login-form button {
+	margin-top: 50px;
+}
+
+/* ---------- DONATE PAGE STYLE ------------- */
+
+.donate-form {
+	padding: 40px;
+}
+.donate-form:nth-child(1):before {
+	position: absolute;
+	content: '\f007';
+	color: #e7537a;
+	font-size: 30px;
+	font-family: "FontAwesome";
+	border-right: 1px solid #dbdbdb;
+	padding-right: 25px;
+	left: 115px;
+	top: 159px;
+	z-index: 1;
+}
+.donate-form:nth-child(1):after {
+	position: absolute;
+	content: '\f0d6';
+	color: #e7537a;
+	font-size: 30px;
+	font-family: "FontAwesome";
+	border-right: 1px solid #dbdbdb;
+	padding-right: 20px;
+	left: 113px;
+	top: 243px;
+	z-index: 1;
+}
+.donate-form input:nth-child(2) {
+	margin-top: 20px;
+}
+.donate-form button {
+	margin-top: 50px;
+}
+.donate-info p {
+	display: block;
+	color: #999;
+	font-size: 14px;
+	line-height: 25px;
+}
+.donate-info p span {
+	color: #e7537a;
+}
+
+/* ---------- NEWS PAGE STYLE ------------- */
+
+.news-margin {
+	margin-top: 30px;
+}
+.news-wrp {
+	margin-top: 30px;
+	transition: 0.5s;
+}
+.news-wrp:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.news-img {
+	overflow: hidden;
+}
+.news-cnt {
+	padding: 30px;
+	border-bottom: 1px solid #e4e4e4
+}
+.news-cnt p {
+	display: block;
+	color: #999;
+	font-size: 14px;
+	line-height: 25px;
+}
+.news-footer {
+	position: relative;
+	padding: 30px;
+}
+.news-footer span {
+	display: block;
+	color: #a3a3a3;
+	font-size: 12px;
+	font-family: "OpenSansLight";
+	margin-left: 20px;
+}
+.news-footer span:before {
+	position: absolute;
+	content: '\f017';
+	color: #a3a3a3;
+	font-size: 14px;
+	font-family: "FontAwesome";
+	left: 30px;
+	top: 28px;
+	z-index: 1;
+}
+.news-footer a {
+	color: #d8c31e;
+	font-size: 14px;
+}
+
+/* ---------- FULL NEWS PAGE STYLE ------------- */
+
+
+.news-full-cnt {
+	padding: 30px;
+	border-bottom: 1px solid #e4e4e4
+}
+.news-full-cnt p {
+	display: block;
+	color: #666;
+	font-size: 14px;
+	line-height: 25px;
+	margin-top: 20px;
+}
+
+/* ---------- CABINET PAGE STYLE ------------- */
+
+.player-skin {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid #e4e4e4;
+	overflow: hidden;
+}
+.player-skin img {
+	display: block;
+	position: absolute;
+	top: -20px;
+    left: -265px;
+}
+.player-info {
+	padding-left: 30px;
+	padding-top: 30px;
+}
+.player-info h2 {
+	display: block;
+	font-size: 16px;
+	font-family: "OpenSansSemibold";
+	text-transform: uppercase;
+}
+.player-info h3 {
+	display: block;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.player-stat {
+	width: 100%;
+}
+.player-stat tr td:nth-child(1) {
+	width: 50%;
+	height: 40px;
+	font-size: 16px;
+	font-family: "OpenSansSemibold";
+	text-align: left;
+}
+.player-stat tr td:nth-child(2) {
+	width: 50%;
+	height: 40px;
+	font-size: 16px;
+	font-family: "OpenSansLight";
+	text-align: right;
+}
+.progress-wrap {
+	margin-top: 20px;
+}
+.progress {
+	height: 40px;
+	margin: 0;
+	border-radius: 0;
+}
+.progress-wrap span {
+	display: block;
+	color: #333;
+	font-size: 14px;
+	font-family: "OpenSansLight";
+	margin-bottom: 5px;
+}
+.progress-bar {
+	padding-top: 10px;
+	background-color: #e7537a;
+	border-radius: 0;
+}
+
+/* ---------- SETTINGS PAGE STYLE ------------- */
+
+.change-pass-form input:nth-child(2),
+.change-pass-form input:nth-child(3),
+.change-mail-form input:nth-child(2) {
+	margin-top: 20px;
+}
+.change-pass-form button,
+.change-mail-form button {
+	margin-top: 20px;
+}
+
+/* ---------- LEADER PAGE STYLE ------------- */
+
+.table-leader {
+	font-size: 14px;
+	font-family: "OpenSansRegular";
+}
+
+/* ---------- ADMIN PANEL STYLE ------------- */
+
+.admin-nav {
+	list-style: none;
+}
+.admin-nav li a {
+	display: block;
+	line-height: 40px;
+	color: #333;
+	font-size: 14px;
+}
+.server-stats p {
+	display: block;
+	color: #999;
+	font-size: 14px;
+	line-height: 30px;
+}
+.table-admin {
+	font-size: 14px;
+	font-family: "OpenSansRegular";
+}
+.add-news-form textarea:nth-child(3) {
+	height: 200px;
+}
+.add-news-form button {
+	margin-top: 20px;
+}
+.edit-news-form textarea:nth-child(3) {
+	height: 200px;
+}
+.edit-news-form button {
+	margin-top: 20px;
+}
+.a-news-info p {
+	display: block;
+	color: #999;
+	font-size: 14px;
+	line-height: 25px;
+	margin-bottom: 10px;
+}
+.a-news-info p span {
+	color: #e7537a;
+}
+.search-acc button {
+	float: left;
+	margin-top: 20px;
+}
+.acc-func {
+	list-style: none;
+}
+.acc-func li a {
+	display: block;
+	font-size: 14px;
+	line-height: 30px;
+}
+.warn-form button,
+.ban-form button,
+.del-form button {
+	margin-top: 20px;
+	float: right;
+}
+.ban-form input:nth-child(2) {
+	margin-top: 20px;
+}

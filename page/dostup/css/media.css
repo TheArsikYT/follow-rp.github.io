@@ -1,0 +1,59 @@
+@media (max-width: 1600px) {
+	.right-person {
+		right: 5%;
+	}
+} 
+@media (max-width: 1200px) {
+	.right-person {
+		right: 0;
+	}
+} 
+@media (max-width: 991px) {
+	.header {
+		height: 100%;
+	}
+	.project-info {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.start {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.title-line {
+		margin-top: 30px;
+	}
+} 
+@media (max-width: 767px) {
+	.header {
+		background-position: center;
+	}
+	.navbar-right a:before {
+		display: none;
+	}
+	.start-buttons a:last-child {
+		margin-top: 30px;
+	}
+	.advantages {
+		padding-bottom: 0;
+	}
+	.advantages-items-wrap .item{
+		margin-top: 50px;
+	}
+	.advantages-items-wrap .item p {
+		width: 300px;
+		margin: 20px auto;
+	}
+	.server-name h2 {
+		margin-top: 0;
+	}
+	.server-players span {
+		float: left;
+		margin-left: 50px;
+	}
+	.xs-margin {
+		margin-top: 30px;
+	}
+}
